@@ -1,0 +1,24 @@
+1. What is flutter widget?
+Description/Details of UI, With it we build UI.
+
+2. What is material app?
+It is likely the main or core component of flutter.
+We can access all the other components and widgets provided by Flutter SDK.
+
+3. What is app bar?
+It is a UI toolkit which represents the action bar/tool bar (Header).
+
+4. What is Scaffold?
+It is a widget which returns a material design.
+
+
+Widgets:
+1. RaisedButton
+2. FlatButton
+3. Column.
+4. Row.
+5. Switch.
+6. Slider.
+7. Image
+	*fit:BoxFit.cover
+8. TextField
