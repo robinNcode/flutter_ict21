@@ -1,5 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_app/screens/main_screen.dart';
+import 'package:login_app/services/auth_service.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(LoginApp());
@@ -10,11 +14,20 @@ class LoginApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Login();
+    return MultiProvider(
+      providers: [
+        Provider<AuthService>(
+          create: (.) => AuthService(FirebaseAuth.instance),
+        ),
+        StreamProvider(
+
+        )
+      ],
+    );
   }
 }
 
-class Login extends StatefulWidget {
+/*class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
   @override
@@ -22,6 +35,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -60,7 +74,7 @@ class _LoginState extends State<Login> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 20, top: 10, right: 20, bottom: 0),
-                  child: TextField(
+                  child: TextFormField(
                     decoration: InputDecoration(
                       icon: Icon(Icons.person),
                       labelText: 'User Name',
@@ -79,7 +93,7 @@ class _LoginState extends State<Login> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 20, top: 10, right: 20, bottom: 0),
-                  child: TextField(
+                  child: TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
                       icon: Icon(Icons.phonelink_lock),
@@ -123,4 +137,4 @@ class _LoginState extends State<Login> {
       ),
     );
   }
-}
+}*/
