@@ -64,6 +64,17 @@ class _VcardState extends State<Vcard> {
                   ),
                 ),
               ),
+            ),
+            Row(
+              children: [
+                Center(
+                  child: RaisedButton(
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                  )
+                )
+              ],
             )
           ],
         ),

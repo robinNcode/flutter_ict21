@@ -12,7 +12,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Vcard(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Navigation Screen'),
+        ),
+        body: Center(
+          child: RaisedButton(
+            onPressed: (){
+              Navigator.push(context, 
+                MaterialPageRoute(builder: (context) => Vcard())
+              );
+            },
+            child: Text('See my Card'),
+            color: Colors.blueAccent,
+            elevation: 20,
+          ),
+        ),
+      ),
     );
   }
 }
