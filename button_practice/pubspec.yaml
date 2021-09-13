@@ -26,6 +26,6 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: Schyler
+    - family: Pacifico
       fonts:
-        - asset: fonts/Schyler-Regular.ttf
+        - asset: assets/fonts/Pacifico-Regular.ttf
