@@ -1,8 +1,19 @@
 void main() {
-  var quran = new HolyQuran();
+  var quran = new HolyQuran().surah;
 
-  print(quran.surah[0]['Ayahs']);
-  print(quran.surah[1]['Ayahs']);
+  for (int ptr = 0; ptr < quran.length; ptr++) {
+    var surahNo = quran[ptr]['Surah No'];
+    var surahName = quran[ptr]['Name'];
+    print("Surah No : $surahNo");
+    print("Surah Name : $surahName");
+
+      for(var ayah in quran[ptr]['Ayahs']){
+        print("Ayah no:" + ayah['ayah no'].toString());
+        print(ayah['ayah'].toString());
+        print(ayah['bangla'].toString());
+        print(ayah['english'].toString());
+      }
+    }
 }
 
 class HolyQuran {
