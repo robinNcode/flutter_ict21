@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:day7/day/first.dart';
-import 'package:day7/day/second.dart';
-import 'package:day7/day/third.dart';
+import 'package:practices/day_7/day/first.dart';
+import 'package:practices/day_7/day/second.dart';
+import 'package:practices/day_7/day/third.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({Key? key}) : super(key: key);

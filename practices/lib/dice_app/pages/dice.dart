@@ -31,7 +31,7 @@ class _DiceStateState extends State<DiceState> {
       child: Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: Text('Dice App'),
+          title: const Text('Dice App'),
         ),
         body: Center(
           child: Row(

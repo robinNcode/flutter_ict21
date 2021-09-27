@@ -6,16 +6,16 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF084E12),
+      backgroundColor: const Color(0xFF084E12),
       appBar: AppBar(
-          backgroundColor: Color(0xFF2F8002),
+          backgroundColor: const Color(0xFF2F8002),
           leading: BackButton(
             color: Colors.black,
             onPressed: () {
               Navigator.pop(context);
             },
           ),
-          title: Text(
+          title: const Text(
             'Profile',
             style: TextStyle(fontSize: 30, fontFamily: 'Lobster'),
           )
@@ -24,7 +24,7 @@ class Profile extends StatelessWidget {
         child: Column(
           children: [
             DecoratedBox(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('assets/images/cover3.jpg'),
                     fit: BoxFit.cover),
@@ -33,14 +33,14 @@ class Profile extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 60.0),
-                      child: CircleAvatar(
+                      margin: const EdgeInsets.only(top: 60.0),
+                      child: const CircleAvatar(
                         backgroundImage:
                             AssetImage('assets/images/profile.jpg'),
                         radius: 60,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'MSM Robin',
                       style: TextStyle(
                         color: Colors.white,
@@ -49,7 +49,7 @@ class Profile extends StatelessWidget {
                         fontFamily: 'Lobster',
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Android Developer',
                       style: TextStyle(
                           color: Colors.white,
@@ -67,31 +67,31 @@ class Profile extends StatelessWidget {
                 children: [
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(Icons.facebook),
+                    child: const Icon(Icons.facebook),
                   ),
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(Icons.add_a_photo),
+                    child: const Icon(Icons.add_a_photo),
                   ),
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(Icons.mail),
+                    child: const Icon(Icons.mail),
                   ),
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(Icons.person),
+                    child: const Icon(Icons.person),
                   ),
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(Icons.home),
+                    child: const Icon(Icons.home),
                   ),
                 ],
               ),
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.phone_android),
-                title: Text(
+                leading: const Icon(Icons.phone_android),
+                title: const Text(
                   '+8801739299741',
                   style: TextStyle(color: Colors.black, fontSize: 20),
                 ),
@@ -100,8 +100,8 @@ class Profile extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.mail_outline),
-                title: Text(
+                leading: const Icon(Icons.mail_outline),
+                title: const Text(
                   'msmrobin518@gmail.com',
                   style: TextStyle(
                     color: Colors.black,
@@ -112,8 +112,8 @@ class Profile extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.location_on),
-                title: Text(
+                leading: const Icon(Icons.location_on),
+                title: const Text(
                   '60/26 B-Dhalpur, Jatrabari, Dhaka',
                   style: TextStyle(
                     color: Colors.black,
@@ -128,7 +128,7 @@ class Profile extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         backgroundColor: Colors.lightGreen,
         elevation: 20,
       ),

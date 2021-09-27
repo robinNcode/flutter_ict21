@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:day7/day/menu_bar.dart';
+import 'package:practices/day_7/day/menu_bar.dart';
 
 class SecondPage extends StatefulWidget {
   const SecondPage({ Key? key }) : super(key: key);

@@ -20,13 +20,13 @@ class _DashBoard extends State<DashBoard> {
               child: Column(
                 children: [
                   RaisedButton(
-                    child: Text('Raised Button'),
+                    child: const Text('Raised Button'),
                     onPressed: () {},
                     elevation: 20,
                   ),
                   FlatButton(
                       onPressed: () {},
-                      child: Text('Flat Button')
+                      child: const Text('Flat Button')
                   ),
                   Switch(
                     onChanged: (isEnabled) {},
@@ -38,8 +38,8 @@ class _DashBoard extends State<DashBoard> {
                     min: 0,
                     max: 100,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
+                  const Padding(
+                    padding: EdgeInsets.all(20.0),
                     child: Image(
                       image: NetworkImage(
                           'https://img.freepik.com/free-vector/cute-panda-with-bamboo_138676-3053.jpg'),
@@ -48,13 +48,12 @@ class _DashBoard extends State<DashBoard> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Padding(
-                      padding: const EdgeInsets.all(20.0),
+                  const Padding(
+                      padding: EdgeInsets.all(20.0),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: 'Write your name',
                           labelText: 'Name',
-
                         ),
                       )
                   )

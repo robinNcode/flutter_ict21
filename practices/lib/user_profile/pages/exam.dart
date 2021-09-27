@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 
 class Exam extends StatelessWidget {
@@ -12,7 +14,7 @@ class Exam extends StatelessWidget {
           children: [
             Container(
               child: Column(
-                children: [
+                children: const [
                   CustomHeader(header: 'Personal Information'),
                   CustomField(data: 'Personal Details', icon: Icons.person),
                   CustomField(data: "Contact", icon: Icons.phone_android),
@@ -32,7 +34,7 @@ class Exam extends StatelessWidget {
             ),
             Container(
               child: Column(
-                children: [
+                children: const [
                   CustomHeader(header: 'Education / Training'),
                   CustomField(data: 'Academic Qualification', icon: Icons.account_balance_rounded ),
                   CustomField(data: 'Training Summary', icon: Icons.add_business),
@@ -40,28 +42,28 @@ class Exam extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               child: Divider(
                 color: Colors.grey,
               ),
             ),
             Container(
               child: Column(
-                children: [
+                children: const [
                   CustomHeader(header: 'Employment History'),
                   CustomField(data: 'Employment History', icon: Icons.history),
                   CustomField(data: 'Employment History (Retired Army per)', icon: Icons.history_edu),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               child: Divider(
                 color: Colors.grey,
               ),
             ),
             Container(
               child: Column(
-                children: [
+                children: const [
                   CustomHeader(header: 'Other Information'),
                   CustomField(data: 'Specialization', icon: Icons.settings_applications),
                   CustomField(data: 'Language Proficiency', icon: Icons.language),
@@ -84,11 +86,11 @@ class CustomHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 180),
-      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.only(right: 180),
+      padding: const EdgeInsets.all(5),
       child: Text(
         header,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20,
         ),
@@ -111,7 +113,7 @@ class CustomField extends StatelessWidget {
       color:Colors.blue),
       title: Text(
         data,
-        style: TextStyle(fontSize: 18),
+        style: const TextStyle(fontSize: 18),
       ),
     );
   }

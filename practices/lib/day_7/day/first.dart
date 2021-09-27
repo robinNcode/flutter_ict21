@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:day7/day/menu_bar.dart';
+import 'package:practices/day_7/day/menu_bar.dart';
 
 class StackAssign extends StatefulWidget {
   const StackAssign({Key? key}) : super(key: key);
@@ -16,15 +16,15 @@ class _StackAssignState extends State<StackAssign> {
       child: Scaffold(
         appBar: AppBar(
             backgroundColor: Colors.black,
-            title: Text(
+            title: const Text(
               'Image - 1',
               style: TextStyle(fontSize: 20, fontFamily: 'Lobster'),
             )
         ),
-        drawer: CustomDrawer(),
+        drawer: const CustomDrawer(),
         body: Stack(
           children: [
-            Container(
+            SizedBox(
               width: MediaQuery
                   .of(context)
                   .size
@@ -33,7 +33,7 @@ class _StackAssignState extends State<StackAssign> {
                   .of(context)
                   .size
                   .height,
-              child: Image(
+              child: const Image(
                 image: AssetImage('assets/images/back.jpg'),
                 fit: BoxFit.cover,
               ),
@@ -46,13 +46,13 @@ class _StackAssignState extends State<StackAssign> {
                       .of(context)
                       .size
                       .width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Colors.black, Colors.transparent],
                           begin: Alignment.topCenter,
                           end: Alignment.center)),
                   child: Column(
-                    children: [
+                    children: const [
                       Text(
                         'The whole world depends on logic,',
                         style: TextStyle(

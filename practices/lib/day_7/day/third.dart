@@ -1,4 +1,4 @@
-import 'package:day7/day/menu_bar.dart';
+import 'package:practices/day_7/day/menu_bar.dart';
 import 'package:flutter/material.dart';
 
 class ThirdPage extends StatefulWidget {
