@@ -1,3 +1,4 @@
+import 'package:practices/day_10/widgets/most_popular_widgets.dart';
 import 'package:practices/day_10/widgets/travel_blog.dart';
 import 'package:flutter/material.dart';
 
@@ -27,9 +28,9 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Travel Blog',
+                const Text('My Photography Blog',
                     style: TextStyle(
-                      fontSize: 36,
+                      fontSize: 30,
                     )),
                 Expanded(
                   flex: 2,
@@ -49,7 +50,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Expanded(
                   flex: 1,
-                  child: TravelBlog(),
+                  child: MostPopularWidget(),
                 ),
               ],
             ),

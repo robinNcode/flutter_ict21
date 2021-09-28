@@ -1,4 +1,4 @@
-void main() {
+/* void main() {
   var quran = new HolyQuran().surah;
 
   for (int ptr = 0; ptr < quran.length; ptr++) {
@@ -103,4 +103,4 @@ class HolyQuran {
       ]
     },
   ];
-}
+}*/
