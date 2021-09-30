@@ -33,7 +33,7 @@ class _LoadingState extends State<Loading>  with TickerProviderStateMixin{
     )..addListener(() {
       setState(() {});
     });
-    controller.repeat(reverse: true);
+    controller.repeat(reverse: false);
     super.initState();
   }
 
@@ -52,7 +52,7 @@ class _LoadingState extends State<Loading>  with TickerProviderStateMixin{
                     child: GestureDetector(
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context) => SignInPage()));
-                      },
+                      }, 
                       child: Image(
                         image: AssetImage('assets/exam3/images/pencilbox.png'),
                         width: MediaQuery.of(context).size.width/2.5,
