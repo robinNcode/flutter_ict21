@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #Day13 packages
+  liquid_swipe: ^2.1.1
+
 
   cupertino_icons: ^1.0.2
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practices/day_13/pages/liquid_swipe.dart';
 import 'day_12/home.dart';
 import 'day_12/splash_screen.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: ShuduLiquide(),
     );
   }
 }
