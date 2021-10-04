@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'search_abr.dart';
+import 'package:practices/day_13/pages/tag_list.dart';
+import 'search_bar.dart';
 import 'home_app.dart';
 
 class Dashboard extends StatefulWidget {
@@ -29,6 +30,7 @@ class _DashboardState extends State<Dashboard> {
           children: [
             HomeAppBar(),
             SearchBar(),
+            TagList()
           ],
         )
       ]),

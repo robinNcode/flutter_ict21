@@ -21,6 +21,9 @@ class HomeAppBar extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: _size.height / 60,
+              ),
               Text(
                 "MsM Robin",
                 style: TextStyle(
