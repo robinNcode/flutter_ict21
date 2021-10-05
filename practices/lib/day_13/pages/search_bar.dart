@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatelessWidget {
@@ -6,51 +7,57 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(20),
       height: 300,
       width: double.maxFinite,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        image: DecorationImage(
-          image: NetworkImage(
-              "https://image.shutterstock.com/image-photo/abstract-real-paper-textured-light-260nw-1580357116.jpg"),
+        image: const DecorationImage(
+          image: AssetImage("assets/day_13/images/search2.jpg"),
           fit: BoxFit.cover,
-
         ),
       ),
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             "Fast Search",
             style: TextStyle(
-              // color: Colors.white,
+              color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 20,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text(
-            "You can search quickly for the job you want",
+          const Text(
+            "You can search quickly for \n the job you want",
             style: TextStyle(
               height: 1.8,
-              // color: Colors.white,
+              color: Colors.white,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Container(
-            padding: EdgeInsets.all(15),
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(50)),
+            padding: const EdgeInsets.all(15),
             child: Row(
-              children: [
-                Image.network('')
+              children: const [
+                Icon(Icons.search),
+                Text(
+                  "Search",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                )
               ],
             ),
           )

@@ -15,7 +15,7 @@ class HomeAppBar extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Welcome Home",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -24,7 +24,7 @@ class HomeAppBar extends StatelessWidget {
               SizedBox(
                 height: _size.height / 60,
               ),
-              Text(
+              const Text(
                 "MsM Robin",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -38,11 +38,11 @@ class HomeAppBar extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 40, right: 40),
+                  margin: const EdgeInsets.only(top: 40, right: 40),
                   transform: Matrix4.rotationZ(100),
                   child: Stack(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.notifications_none_outlined,
                         size: 30,
                         color: Colors.grey,
@@ -51,8 +51,8 @@ class HomeAppBar extends StatelessWidget {
                         top: 1,
                         right: 1,
                         child: Container(
-                          padding: EdgeInsets.all(4),
-                          decoration: BoxDecoration(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
                             color: Colors.red,
                             shape: BoxShape.circle,
                           ),
@@ -61,9 +61,10 @@ class HomeAppBar extends StatelessWidget {
                     ],
                   ),
                 ),
-                ClipOval(
-                  child: Image.network(
-                      "https://lh3.googleusercontent.com/ogw/ADea4I6EJ74mTE9aE8p5UGnbFwvwj1A8cQrwp61pUElcGA=s32-c-mo"),
+                const ClipOval(
+                  child: Image(
+                    image: AssetImage("assets/day_13/images/profile.jpg")
+                  ),
                 ),
               ],
             ),

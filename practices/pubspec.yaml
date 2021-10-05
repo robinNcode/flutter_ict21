@@ -31,8 +31,7 @@ flutter:
   
   assets:
     - assets/day_13/images/
-    - assets/day_13/icons/
-
+    
   # fonts:
   #   - family: Schyler
   #     fonts:
