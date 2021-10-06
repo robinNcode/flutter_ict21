@@ -1,6 +1,5 @@
+import 'package:exams/exam4/registration.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'account.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -28,7 +27,7 @@ class SignInPage extends StatelessWidget {
             children: [
               Text(
                 'Sign In',
-                style: TextStyle(fontSize: 36, color: Color(0xFF3B185F)),
+                style: TextStyle(fontSize: 36, color: Color(0xFF122F51)),
               ),
               SizedBox(
                 height: _size.height / 50,
@@ -95,7 +94,7 @@ class SignInPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => AccountPage()));
+              context, MaterialPageRoute(builder: (context) => RegistrationPage()));
         },
         backgroundColor: Colors.red,
         child: Icon(

@@ -39,7 +39,7 @@ class AccountPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: _size.height / 20,
+                height: _size.height / 10,
               ),
               const Text(
                 'Create Your Free BdJobs Account',
@@ -47,7 +47,7 @@ class AccountPage extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(
-                    top: _size.height / 30,
+                    top: _size.height / 20,
                     left: _size.width / 13,
                     right: _size.width / 13),
                 child: Container(
@@ -104,7 +104,10 @@ class AccountPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: _size.height / 30, left: _size.width / 16, right: _size.width / 16),
+                padding: EdgeInsets.only(
+                    top: _size.height / 30,
+                    left: _size.width / 16,
+                    right: _size.width / 16),
                 child: Column(
                   children: [
                     Row(children: <Widget>[
@@ -131,7 +134,28 @@ class AccountPage extends StatelessWidget {
                   ],
                 ),
               ),
-              CustomCard(text: 'Enter your information', textColor: Colors.white, bgColor: Colors.black,),
+              Padding(
+                padding: EdgeInsets.only(top: _size.height/ 30, left: _size.width/13, right: _size.width/13),
+                child: Container(
+                  height: 55,
+                  width: double.maxFinite,
+                  child: Center(
+                    child: Text(
+                      'Enter your information',
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                      style: BorderStyle.solid,
+                      width: 1.0,
+                    ),
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+              ),
               SizedBox(
                 height: _size.height / 10,
               ),

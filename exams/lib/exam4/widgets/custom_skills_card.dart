@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
   final String text;
-  final Color textColor;
   final Color bgColor;
-  const CustomCard({Key? key, required this.text, required this.textColor, required this.bgColor})
+  const CustomCard({Key? key, required this.text, required this.bgColor})
       : super(key: key);
 
   @override
@@ -12,17 +11,15 @@ class CustomCard extends StatelessWidget {
     final _size = MediaQuery.of(context).size;
 
     return Padding(
-      padding: EdgeInsets.only(
-          top: _size.height / 30,
-          left: _size.width / 13,
-          right: _size.width / 13),
+      padding: EdgeInsets.only(top: _size.width / 20),
       child: Container(
         height: 55,
         width: double.maxFinite,
-        child: Center(
+        child: Padding(
+          padding: EdgeInsets.only(top: 14, left: 14),
           child: Text(
             text,
-            style: TextStyle(fontSize: 20, color: textColor),
+            style: TextStyle(fontSize: 20),
           ),
         ),
         decoration: BoxDecoration(
