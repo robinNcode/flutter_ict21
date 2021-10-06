@@ -1,8 +1,10 @@
 // ignore_for_file: unused_import
-
 import 'package:exams/exam3/loading_page.dart';
+import 'package:exams/exam4/account.dart';
+import 'package:exams/exam4/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:exams/pages/exam2.dart';
+import 'package:flutter/services.dart';
 
 void main(){
   runApp(MyApp());
@@ -13,9 +15,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Color(0xFF150050),
+        statusBarIconBrightness: Brightness.light,
+      ),
+    );
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Loading(),
+      home: SignInPage(),
     );
   }
 }
