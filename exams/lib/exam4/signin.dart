@@ -31,7 +31,7 @@ class SignInPage extends StatelessWidget {
                 style: TextStyle(fontSize: 36, color: Color(0xFF3B185F)),
               ),
               SizedBox(
-                height: _size.height / 40,
+                height: _size.height / 50,
               ),
               Padding(
                 padding: EdgeInsets.only(top: _size.height / 20, left: _size.width/40),
@@ -43,20 +43,19 @@ class SignInPage extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(top: _size.height / 40, left: _size.width/40),
                 child: TextFormField(
-                  cursorHeight: 20,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(_size.width/20),
                     labelText: 'Name',
-                    labelStyle: TextStyle(color: Colors.black87),
+                    labelStyle: TextStyle(color: Color(0xFF150050)),
                     floatingLabelBehavior: FloatingLabelBehavior.always,
                     enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
-                          color: Color(0xFF150050), width: 1.0),
+                          color: Colors.grey, width: 1.0),
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide:
-                          const BorderSide(color: Colors.black, width: 1.0),
+                          const BorderSide(color: Colors.grey, width: 1.0),
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
