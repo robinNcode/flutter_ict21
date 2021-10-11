@@ -8,7 +8,7 @@ import 'day_13/pages/liquid_swipe.dart';
 //import 'day_12/splash_screen.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: ShuduLiquide(),
+      home: Dashboard(),
     );
   }
 }
