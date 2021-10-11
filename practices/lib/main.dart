@@ -1,7 +1,9 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:practices/day_13/pages/dashboard.dart';
-
+import 'package:practices/day_16/home.dart';
 import 'day_13/pages/liquid_swipe.dart';
 //import 'package:practices/day_13/pages/liquid_swipe.dart';
 //import 'day_12/home.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: Dashboard(),
+      home: HomePage(),
     );
   }
 }

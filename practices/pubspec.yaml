@@ -33,7 +33,8 @@ flutter:
   
   assets:
     - assets/day_13/images/
-    
+    - assets/day_16/images/
+
   # fonts:
   #   - family: Schyler
   #     fonts:
