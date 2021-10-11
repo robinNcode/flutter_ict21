@@ -1,0 +1,7 @@
+What is route?
+A route is address of a page or screen.
+
+What is navigator?
+Navigator is a widget by which we can controls routes.
+
+"..." three dot is the spread operator
