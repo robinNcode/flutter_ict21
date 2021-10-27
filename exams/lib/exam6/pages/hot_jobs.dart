@@ -68,6 +68,7 @@ class _HotJobPageState extends State<HotJobPage> {
               ),
             ),
           ),
+          SizedBox(height:20),
           HotJobWidget(),
           HotJobWidget(),
           HotJobWidget(),

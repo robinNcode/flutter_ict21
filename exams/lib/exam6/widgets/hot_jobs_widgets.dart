@@ -27,7 +27,7 @@ class _HotJobWidgetState extends State<HotJobWidget> {
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           subtitle: const Text(
-            'Creative Visiulizer (3D Animation), Digital Media',
+            'Creative Visualizer (3D Animation), Digital Media',
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(fontSize: 18),
@@ -36,6 +36,11 @@ class _HotJobWidgetState extends State<HotJobWidget> {
             Icons.keyboard_arrow_right,
             color: Colors.teal,
             size: 30,
+          ),
+          trailing: CircleAvatar(
+            radius: 16,
+            backgroundColor: Colors.white,
+            child: Image.asset('assets/exam6/images/dbbl.png')
           ),
         ),
       ),
