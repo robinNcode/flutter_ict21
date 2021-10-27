@@ -1,5 +1,3 @@
-// ignore_for_file: unused_import
-import 'package:exams/exam3/loading_page.dart';
 import 'package:exams/exam4/account.dart';
 import 'package:exams/exam4/signin.dart';
 import 'package:flutter/material.dart';
