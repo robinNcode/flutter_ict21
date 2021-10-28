@@ -4,6 +4,8 @@ import 'package:exams/exam6/pages/hot_jobs.dart';
 import 'package:flutter/material.dart';
 import 'package:exams/pages/exam2.dart';
 import 'package:flutter/services.dart';
+import 'exam6/pages/dashboard.dart';
+import 'exam6/pages/job_search.dart';
 import 'exam6/pages/profile.dart';
 
 void main(){
@@ -26,7 +28,12 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HotJobPage(),
+      theme: ThemeData(
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(fixedSize: Size.fromHeight(150)),
+        ),
+      ),
+      home: JobSearchPage(),
     );
   }
 }

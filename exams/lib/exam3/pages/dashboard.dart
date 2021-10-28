@@ -69,7 +69,7 @@ class DashBoard extends StatelessWidget {
                     icon: FontAwesomeIcons.search,
                     buttonColor: Color(0xFF122F51),
                     iconColor: Colors.white,
-                    textColor:  Colors.white,
+                    textColor: Colors.white,
                   ),
                   CustomButton(
                     text: 'View New Jobs',
@@ -108,8 +108,7 @@ class DashBoard extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
-          },
+          onPressed: () {},
           backgroundColor: Colors.red,
           child: Icon(
             Icons.arrow_forward,
@@ -175,7 +174,13 @@ class CustomButton extends StatelessWidget {
   final IconData icon;
   final Color buttonColor, textColor, iconColor;
 
-  const CustomButton({Key? key, required this.text, required this.icon, required this.buttonColor, required this.textColor, required this.iconColor})
+  const CustomButton(
+      {Key? key,
+      required this.text,
+      required this.icon,
+      required this.buttonColor,
+      required this.textColor,
+      required this.iconColor})
       : super(key: key);
 
   @override
@@ -197,15 +202,18 @@ class CustomButton extends StatelessWidget {
                 ),
                 TextSpan(
                     text: text,
-                    style: TextStyle(color: textColor, fontSize: 20, fontWeight: FontWeight.bold)),
+                    style: TextStyle(
+                        color: textColor,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold)),
               ],
             ),
           ),
           splashColor: Colors.grey,
           onPressed: () {},
           backgroundColor: buttonColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         ),
       ),
     );

@@ -22,7 +22,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
-      Navigator.push(context, MaterialPageRoute(builder: (context) => _pages[_selectedIndex + 1]));
+      //Navigator.push(context, MaterialPageRoute(builder: (context) => _pages[_selectedIndex + 1]));
     });
   }
 
@@ -69,7 +69,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
         ),
       ],
       currentIndex: _selectedIndex,
-      selectedItemColor: Colors.black,
+      selectedItemColor: Color(0xFF122F51),
       onTap: _onItemTapped,
     );
   }

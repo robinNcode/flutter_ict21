@@ -50,7 +50,7 @@ class ProfilePage extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  height: _size.height / 13,
+                  height: _size.height / 11,
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 12,
@@ -76,7 +76,7 @@ class ProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 10,),
                 Container(
-                  height: _size.height / 13,
+                  height: _size.height / 11,
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 12,
