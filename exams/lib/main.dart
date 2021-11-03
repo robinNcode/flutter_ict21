@@ -7,6 +7,9 @@ import 'package:flutter/services.dart';
 import 'exam6/pages/dashboard.dart';
 import 'exam6/pages/job_search.dart';
 import 'exam6/pages/profile.dart';
+import 'exam7/pages/contact_details.dart';
+import 'exam7/pages/personal_details.dart';
+import 'exam7/pages/personal_details_edit.dart';
 
 void main(){
   runApp(MyApp());
@@ -33,7 +36,7 @@ class MyApp extends StatelessWidget {
           style: TextButton.styleFrom(fixedSize: Size.fromHeight(150)),
         ),
       ),
-      home: JobSearchPage(),
+      home: PersonalDetails(),
     );
   }
 }
